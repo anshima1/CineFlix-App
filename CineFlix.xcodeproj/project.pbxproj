@@ -1,0 +1,740 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C32B4B4C273A65C300CC3CC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B4B4B273A65C300CC3CC9 /* AppDelegate.swift */; };
+		C32B4B4E273A65C300CC3CC9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B4B4D273A65C300CC3CC9 /* SceneDelegate.swift */; };
+		C32B4B50273A65C300CC3CC9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B4B4F273A65C300CC3CC9 /* ContentView.swift */; };
+		C32B4B52273A65C600CC3CC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C32B4B51273A65C600CC3CC9 /* Assets.xcassets */; };
+		C32B4B55273A65C600CC3CC9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C32B4B54273A65C600CC3CC9 /* Preview Assets.xcassets */; };
+		C32B4B58273A65C600CC3CC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C32B4B56273A65C600CC3CC9 /* LaunchScreen.storyboard */; };
+		C32B4B63273A65C600CC3CC9 /* CineFlixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B4B62273A65C600CC3CC9 /* CineFlixTests.swift */; };
+		C32B4B6E273A65C600CC3CC9 /* CineFlixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B4B6D273A65C600CC3CC9 /* CineFlixUITests.swift */; };
+		C32B4B88273A685E00CC3CC9 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B4B87273A685D00CC3CC9 /* Movie.swift */; };
+		C32B4B92273A688E00CC3CC9 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B4B91273A688E00CC3CC9 /* MovieService.swift */; };
+		C32B4B9A273A689B00CC3CC9 /* MovieStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B4B99273A689B00CC3CC9 /* MovieStore.swift */; };
+		C32B4BA0273A690F00CC3CC9 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B4B9F273A690F00CC3CC9 /* Utils.swift */; };
+		C32B4BA8273A693500CC3CC9 /* Movie+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B4BA7273A693500CC3CC9 /* Movie+Stub.swift */; };
+		C32B4BB1273A698F00CC3CC9 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B4BB0273A698F00CC3CC9 /* ImageLoader.swift */; };
+		C32B4BB9273A69AB00CC3CC9 /* MovieDetailState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B4BB8273A69AB00CC3CC9 /* MovieDetailState.swift */; };
+		C32B4BBE273A69B800CC3CC9 /* MovieListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B4BBD273A69B800CC3CC9 /* MovieListState.swift */; };
+		C32B4BC3273A69CE00CC3CC9 /* MovieSearchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B4BC2273A69CE00CC3CC9 /* MovieSearchState.swift */; };
+		C32B4BD7273A6AFE00CC3CC9 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B4BD6273A6AFE00CC3CC9 /* ActivityIndicatorView.swift */; };
+		C32B4BDF273A6B2500CC3CC9 /* MovieCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B4BDE273A6B2500CC3CC9 /* MovieCard.swift */; };
+		C32B4BE4273A6B9300CC3CC9 /* MovieCardCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B4BE3273A6B9300CC3CC9 /* MovieCardCarouselView.swift */; };
+		C32B4BEC273A6BEA00CC3CC9 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B4BEB273A6BEA00CC3CC9 /* MovieDetailView.swift */; };
+		C32B4BF1273A6C7300CC3CC9 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B4BF0273A6C7300CC3CC9 /* LoadingView.swift */; };
+		C32B4BF6273A6CBC00CC3CC9 /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B4BF5273A6CBC00CC3CC9 /* MovieListView.swift */; };
+		C32B4BFB273A6CFC00CC3CC9 /* MoviePosterCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B4BFA273A6CFC00CC3CC9 /* MoviePosterCarouselView.swift */; };
+		C32B4C00273A6D1A00CC3CC9 /* MoviePoster.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B4BFF273A6D1A00CC3CC9 /* MoviePoster.swift */; };
+		C32B4C0A273A6E7900CC3CC9 /* movie_info.json in Resources */ = {isa = PBXBuildFile; fileRef = C32B4C07273A6E7900CC3CC9 /* movie_info.json */; };
+		C32B4C0B273A6E7900CC3CC9 /* movie_list.json in Resources */ = {isa = PBXBuildFile; fileRef = C32B4C08273A6E7900CC3CC9 /* movie_list.json */; };
+		C32B4C0C273A6E7900CC3CC9 /* search_movie.json in Resources */ = {isa = PBXBuildFile; fileRef = C32B4C09273A6E7900CC3CC9 /* search_movie.json */; };
+		C32B4C11273A7A6F00CC3CC9 /* MovieSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B4C10273A7A6F00CC3CC9 /* MovieSearchView.swift */; };
+		C32B4C16273A7AB400CC3CC9 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B4C15273A7AB400CC3CC9 /* SearchBarView.swift */; };
+		C32B4C2B273A9FD900CC3CC9 /* SavedMoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B4C2A273A9FD900CC3CC9 /* SavedMoviesView.swift */; };
+		C32B4C30273AAA3700CC3CC9 /* SavedMoviesSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B4C2F273AAA3700CC3CC9 /* SavedMoviesSubView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C32B4B5F273A65C600CC3CC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C32B4B40273A65C300CC3CC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C32B4B47273A65C300CC3CC9;
+			remoteInfo = CineFlix;
+		};
+		C32B4B6A273A65C600CC3CC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C32B4B40273A65C300CC3CC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C32B4B47273A65C300CC3CC9;
+			remoteInfo = CineFlix;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C32B4B48273A65C300CC3CC9 /* CineFlix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CineFlix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C32B4B4B273A65C300CC3CC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C32B4B4D273A65C300CC3CC9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C32B4B4F273A65C300CC3CC9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C32B4B51273A65C600CC3CC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C32B4B54273A65C600CC3CC9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C32B4B57273A65C600CC3CC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C32B4B59273A65C600CC3CC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C32B4B5E273A65C600CC3CC9 /* CineFlixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CineFlixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C32B4B62273A65C600CC3CC9 /* CineFlixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CineFlixTests.swift; sourceTree = "<group>"; };
+		C32B4B64273A65C600CC3CC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C32B4B69273A65C600CC3CC9 /* CineFlixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CineFlixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C32B4B6D273A65C600CC3CC9 /* CineFlixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CineFlixUITests.swift; sourceTree = "<group>"; };
+		C32B4B6F273A65C600CC3CC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C32B4B87273A685D00CC3CC9 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		C32B4B91273A688E00CC3CC9 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		C32B4B99273A689B00CC3CC9 /* MovieStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStore.swift; sourceTree = "<group>"; };
+		C32B4B9F273A690F00CC3CC9 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		C32B4BA7273A693500CC3CC9 /* Movie+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+Stub.swift"; sourceTree = "<group>"; };
+		C32B4BB0273A698F00CC3CC9 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		C32B4BB8273A69AB00CC3CC9 /* MovieDetailState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailState.swift; sourceTree = "<group>"; };
+		C32B4BBD273A69B800CC3CC9 /* MovieListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListState.swift; sourceTree = "<group>"; };
+		C32B4BC2273A69CE00CC3CC9 /* MovieSearchState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchState.swift; sourceTree = "<group>"; };
+		C32B4BD6273A6AFE00CC3CC9 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		C32B4BDE273A6B2500CC3CC9 /* MovieCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCard.swift; sourceTree = "<group>"; };
+		C32B4BE3273A6B9300CC3CC9 /* MovieCardCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCardCarouselView.swift; sourceTree = "<group>"; };
+		C32B4BEB273A6BEA00CC3CC9 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
+		C32B4BF0273A6C7300CC3CC9 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		C32B4BF5273A6CBC00CC3CC9 /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
+		C32B4BFA273A6CFC00CC3CC9 /* MoviePosterCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePosterCarouselView.swift; sourceTree = "<group>"; };
+		C32B4BFF273A6D1A00CC3CC9 /* MoviePoster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePoster.swift; sourceTree = "<group>"; };
+		C32B4C07273A6E7900CC3CC9 /* movie_info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movie_info.json; sourceTree = "<group>"; };
+		C32B4C08273A6E7900CC3CC9 /* movie_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movie_list.json; sourceTree = "<group>"; };
+		C32B4C09273A6E7900CC3CC9 /* search_movie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = search_movie.json; sourceTree = "<group>"; };
+		C32B4C10273A7A6F00CC3CC9 /* MovieSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchView.swift; sourceTree = "<group>"; };
+		C32B4C15273A7AB400CC3CC9 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		C32B4C2A273A9FD900CC3CC9 /* SavedMoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedMoviesView.swift; sourceTree = "<group>"; };
+		C32B4C2F273AAA3700CC3CC9 /* SavedMoviesSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedMoviesSubView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C32B4B45273A65C300CC3CC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C32B4B5B273A65C600CC3CC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C32B4B66273A65C600CC3CC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C32B4B3F273A65C300CC3CC9 = {
+			isa = PBXGroup;
+			children = (
+				C32B4B4A273A65C300CC3CC9 /* CineFlix */,
+				C32B4B61273A65C600CC3CC9 /* CineFlixTests */,
+				C32B4B6C273A65C600CC3CC9 /* CineFlixUITests */,
+				C32B4B49273A65C300CC3CC9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C32B4B49273A65C300CC3CC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C32B4B48273A65C300CC3CC9 /* CineFlix.app */,
+				C32B4B5E273A65C600CC3CC9 /* CineFlixTests.xctest */,
+				C32B4B69273A65C600CC3CC9 /* CineFlixUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C32B4B4A273A65C300CC3CC9 /* CineFlix */ = {
+			isa = PBXGroup;
+			children = (
+				C32B4B4B273A65C300CC3CC9 /* AppDelegate.swift */,
+				C32B4B4D273A65C300CC3CC9 /* SceneDelegate.swift */,
+				C32B4B9F273A690F00CC3CC9 /* Utils.swift */,
+				C32B4C06273A6E1B00CC3CC9 /* Resources */,
+				C32B4BAF273A697E00CC3CC9 /* Bindings */,
+				C32B4BC7273A6A2200CC3CC9 /* Views */,
+				C32B4B90273A687A00CC3CC9 /* Services */,
+				C32B4B86273A684C00CC3CC9 /* Model */,
+				C32B4B4F273A65C300CC3CC9 /* ContentView.swift */,
+				C32B4B51273A65C600CC3CC9 /* Assets.xcassets */,
+				C32B4B56273A65C600CC3CC9 /* LaunchScreen.storyboard */,
+				C32B4B59273A65C600CC3CC9 /* Info.plist */,
+				C32B4B53273A65C600CC3CC9 /* Preview Content */,
+			);
+			path = CineFlix;
+			sourceTree = "<group>";
+		};
+		C32B4B53273A65C600CC3CC9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C32B4B54273A65C600CC3CC9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C32B4B61273A65C600CC3CC9 /* CineFlixTests */ = {
+			isa = PBXGroup;
+			children = (
+				C32B4B62273A65C600CC3CC9 /* CineFlixTests.swift */,
+				C32B4B64273A65C600CC3CC9 /* Info.plist */,
+			);
+			path = CineFlixTests;
+			sourceTree = "<group>";
+		};
+		C32B4B6C273A65C600CC3CC9 /* CineFlixUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C32B4B6D273A65C600CC3CC9 /* CineFlixUITests.swift */,
+				C32B4B6F273A65C600CC3CC9 /* Info.plist */,
+			);
+			path = CineFlixUITests;
+			sourceTree = "<group>";
+		};
+		C32B4B86273A684C00CC3CC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C32B4B87273A685D00CC3CC9 /* Movie.swift */,
+				C32B4BA7273A693500CC3CC9 /* Movie+Stub.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C32B4B90273A687A00CC3CC9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C32B4B91273A688E00CC3CC9 /* MovieService.swift */,
+				C32B4B99273A689B00CC3CC9 /* MovieStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C32B4BAF273A697E00CC3CC9 /* Bindings */ = {
+			isa = PBXGroup;
+			children = (
+				C32B4BB0273A698F00CC3CC9 /* ImageLoader.swift */,
+				C32B4BB8273A69AB00CC3CC9 /* MovieDetailState.swift */,
+				C32B4BBD273A69B800CC3CC9 /* MovieListState.swift */,
+				C32B4BC2273A69CE00CC3CC9 /* MovieSearchState.swift */,
+			);
+			path = Bindings;
+			sourceTree = "<group>";
+		};
+		C32B4BC7273A6A2200CC3CC9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C32B4BC8273A6A3600CC3CC9 /* UIKitViews */,
+				C32B4BDE273A6B2500CC3CC9 /* MovieCard.swift */,
+				C32B4BE3273A6B9300CC3CC9 /* MovieCardCarouselView.swift */,
+				C32B4BFF273A6D1A00CC3CC9 /* MoviePoster.swift */,
+				C32B4BFA273A6CFC00CC3CC9 /* MoviePosterCarouselView.swift */,
+				C32B4BF5273A6CBC00CC3CC9 /* MovieListView.swift */,
+				C32B4BF0273A6C7300CC3CC9 /* LoadingView.swift */,
+				C32B4BEB273A6BEA00CC3CC9 /* MovieDetailView.swift */,
+				C32B4C2A273A9FD900CC3CC9 /* SavedMoviesView.swift */,
+				C32B4C2F273AAA3700CC3CC9 /* SavedMoviesSubView.swift */,
+				C32B4C10273A7A6F00CC3CC9 /* MovieSearchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C32B4BC8273A6A3600CC3CC9 /* UIKitViews */ = {
+			isa = PBXGroup;
+			children = (
+				C32B4BD6273A6AFE00CC3CC9 /* ActivityIndicatorView.swift */,
+				C32B4C15273A7AB400CC3CC9 /* SearchBarView.swift */,
+			);
+			path = UIKitViews;
+			sourceTree = "<group>";
+		};
+		C32B4C06273A6E1B00CC3CC9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C32B4C07273A6E7900CC3CC9 /* movie_info.json */,
+				C32B4C08273A6E7900CC3CC9 /* movie_list.json */,
+				C32B4C09273A6E7900CC3CC9 /* search_movie.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C32B4B47273A65C300CC3CC9 /* CineFlix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C32B4B72273A65C600CC3CC9 /* Build configuration list for PBXNativeTarget "CineFlix" */;
+			buildPhases = (
+				C32B4B44273A65C300CC3CC9 /* Sources */,
+				C32B4B45273A65C300CC3CC9 /* Frameworks */,
+				C32B4B46273A65C300CC3CC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CineFlix;
+			productName = CineFlix;
+			productReference = C32B4B48273A65C300CC3CC9 /* CineFlix.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C32B4B5D273A65C600CC3CC9 /* CineFlixTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C32B4B75273A65C600CC3CC9 /* Build configuration list for PBXNativeTarget "CineFlixTests" */;
+			buildPhases = (
+				C32B4B5A273A65C600CC3CC9 /* Sources */,
+				C32B4B5B273A65C600CC3CC9 /* Frameworks */,
+				C32B4B5C273A65C600CC3CC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C32B4B60273A65C600CC3CC9 /* PBXTargetDependency */,
+			);
+			name = CineFlixTests;
+			productName = CineFlixTests;
+			productReference = C32B4B5E273A65C600CC3CC9 /* CineFlixTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C32B4B68273A65C600CC3CC9 /* CineFlixUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C32B4B78273A65C600CC3CC9 /* Build configuration list for PBXNativeTarget "CineFlixUITests" */;
+			buildPhases = (
+				C32B4B65273A65C600CC3CC9 /* Sources */,
+				C32B4B66273A65C600CC3CC9 /* Frameworks */,
+				C32B4B67273A65C600CC3CC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C32B4B6B273A65C600CC3CC9 /* PBXTargetDependency */,
+			);
+			name = CineFlixUITests;
+			productName = CineFlixUITests;
+			productReference = C32B4B69273A65C600CC3CC9 /* CineFlixUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C32B4B40273A65C300CC3CC9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					C32B4B47273A65C300CC3CC9 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					C32B4B5D273A65C600CC3CC9 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = C32B4B47273A65C300CC3CC9;
+					};
+					C32B4B68273A65C600CC3CC9 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = C32B4B47273A65C300CC3CC9;
+					};
+				};
+			};
+			buildConfigurationList = C32B4B43273A65C300CC3CC9 /* Build configuration list for PBXProject "CineFlix" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C32B4B3F273A65C300CC3CC9;
+			productRefGroup = C32B4B49273A65C300CC3CC9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C32B4B47273A65C300CC3CC9 /* CineFlix */,
+				C32B4B5D273A65C600CC3CC9 /* CineFlixTests */,
+				C32B4B68273A65C600CC3CC9 /* CineFlixUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C32B4B46273A65C300CC3CC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C32B4C0C273A6E7900CC3CC9 /* search_movie.json in Resources */,
+				C32B4B58273A65C600CC3CC9 /* LaunchScreen.storyboard in Resources */,
+				C32B4B55273A65C600CC3CC9 /* Preview Assets.xcassets in Resources */,
+				C32B4C0A273A6E7900CC3CC9 /* movie_info.json in Resources */,
+				C32B4C0B273A6E7900CC3CC9 /* movie_list.json in Resources */,
+				C32B4B52273A65C600CC3CC9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C32B4B5C273A65C600CC3CC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C32B4B67273A65C600CC3CC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C32B4B44273A65C300CC3CC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C32B4BC3273A69CE00CC3CC9 /* MovieSearchState.swift in Sources */,
+				C32B4C00273A6D1A00CC3CC9 /* MoviePoster.swift in Sources */,
+				C32B4BBE273A69B800CC3CC9 /* MovieListState.swift in Sources */,
+				C32B4B4C273A65C300CC3CC9 /* AppDelegate.swift in Sources */,
+				C32B4B4E273A65C300CC3CC9 /* SceneDelegate.swift in Sources */,
+				C32B4BF1273A6C7300CC3CC9 /* LoadingView.swift in Sources */,
+				C32B4B88273A685E00CC3CC9 /* Movie.swift in Sources */,
+				C32B4BFB273A6CFC00CC3CC9 /* MoviePosterCarouselView.swift in Sources */,
+				C32B4BB9273A69AB00CC3CC9 /* MovieDetailState.swift in Sources */,
+				C32B4BA0273A690F00CC3CC9 /* Utils.swift in Sources */,
+				C32B4BA8273A693500CC3CC9 /* Movie+Stub.swift in Sources */,
+				C32B4BE4273A6B9300CC3CC9 /* MovieCardCarouselView.swift in Sources */,
+				C32B4BB1273A698F00CC3CC9 /* ImageLoader.swift in Sources */,
+				C32B4BF6273A6CBC00CC3CC9 /* MovieListView.swift in Sources */,
+				C32B4B50273A65C300CC3CC9 /* ContentView.swift in Sources */,
+				C32B4C2B273A9FD900CC3CC9 /* SavedMoviesView.swift in Sources */,
+				C32B4C11273A7A6F00CC3CC9 /* MovieSearchView.swift in Sources */,
+				C32B4BDF273A6B2500CC3CC9 /* MovieCard.swift in Sources */,
+				C32B4B9A273A689B00CC3CC9 /* MovieStore.swift in Sources */,
+				C32B4C16273A7AB400CC3CC9 /* SearchBarView.swift in Sources */,
+				C32B4B92273A688E00CC3CC9 /* MovieService.swift in Sources */,
+				C32B4BEC273A6BEA00CC3CC9 /* MovieDetailView.swift in Sources */,
+				C32B4C30273AAA3700CC3CC9 /* SavedMoviesSubView.swift in Sources */,
+				C32B4BD7273A6AFE00CC3CC9 /* ActivityIndicatorView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C32B4B5A273A65C600CC3CC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C32B4B63273A65C600CC3CC9 /* CineFlixTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C32B4B65273A65C600CC3CC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C32B4B6E273A65C600CC3CC9 /* CineFlixUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C32B4B60273A65C600CC3CC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C32B4B47273A65C300CC3CC9 /* CineFlix */;
+			targetProxy = C32B4B5F273A65C600CC3CC9 /* PBXContainerItemProxy */;
+		};
+		C32B4B6B273A65C600CC3CC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C32B4B47273A65C300CC3CC9 /* CineFlix */;
+			targetProxy = C32B4B6A273A65C600CC3CC9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C32B4B56273A65C600CC3CC9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C32B4B57273A65C600CC3CC9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C32B4B70273A65C600CC3CC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C32B4B71273A65C600CC3CC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C32B4B73273A65C600CC3CC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CineFlix/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CineFlix/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Anshima.CineFlix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C32B4B74273A65C600CC3CC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CineFlix/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CineFlix/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Anshima.CineFlix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C32B4B76273A65C600CC3CC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CineFlixTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Anshima.CineFlixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CineFlix.app/CineFlix";
+			};
+			name = Debug;
+		};
+		C32B4B77273A65C600CC3CC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CineFlixTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Anshima.CineFlixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CineFlix.app/CineFlix";
+			};
+			name = Release;
+		};
+		C32B4B79273A65C600CC3CC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CineFlixUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Anshima.CineFlixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CineFlix;
+			};
+			name = Debug;
+		};
+		C32B4B7A273A65C600CC3CC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CineFlixUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Anshima.CineFlixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CineFlix;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C32B4B43273A65C300CC3CC9 /* Build configuration list for PBXProject "CineFlix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C32B4B70273A65C600CC3CC9 /* Debug */,
+				C32B4B71273A65C600CC3CC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C32B4B72273A65C600CC3CC9 /* Build configuration list for PBXNativeTarget "CineFlix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C32B4B73273A65C600CC3CC9 /* Debug */,
+				C32B4B74273A65C600CC3CC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C32B4B75273A65C600CC3CC9 /* Build configuration list for PBXNativeTarget "CineFlixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C32B4B76273A65C600CC3CC9 /* Debug */,
+				C32B4B77273A65C600CC3CC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C32B4B78273A65C600CC3CC9 /* Build configuration list for PBXNativeTarget "CineFlixUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C32B4B79273A65C600CC3CC9 /* Debug */,
+				C32B4B7A273A65C600CC3CC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C32B4B40273A65C300CC3CC9 /* Project object */;
+}
